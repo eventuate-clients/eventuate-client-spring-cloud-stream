@@ -1,0 +1,4 @@
+include 'eventuate-client-spring-cloud-stream'
+include 'eventuate-client-spring-cloud-stream-example'
+
+rootProject.name = 'eventuate-client-spring-cloud-stream'

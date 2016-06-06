@@ -1,0 +1,2 @@
+eventuate=\
+io.eventuate.spring.cloud.stream.binder.eventuate.EventuateBinderConfiguration

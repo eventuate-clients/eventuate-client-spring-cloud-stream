@@ -1,0 +1,27 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath "io.spring.gradle:dependency-management-plugin:0.5.2.RELEASE"
+    }
+}
+
+apply plugin: "io.spring.dependency-management"
+apply plugin: PublicModulePlugin
+
+dependencyManagement {
+     imports {
+          mavenBom 'org.springframework.cloud:spring-cloud-stream-dependencies:1.0.0.RELEASE'
+     }
+}
+
+dependencies {
+    compile 'org.springframework.cloud:spring-cloud-stream'
+    compile "io.eventuate.client.java:eventuate-client-java-common-impl:$eventuateClientVersion"
+
+    testCompile "io.eventuate.client.java:eventuate-client-java-tests-example:$eventuateClientVersion"
+    testCompile "io.eventuate.client.java:eventuate-client-java-jdbc:$eventuateClientVersion"
+    testCompile "junit:junit:4.11"
+    testCompile "org.springframework.boot:spring-boot-starter-test:$springBootVersion"
+}
