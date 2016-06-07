@@ -7,7 +7,7 @@ You can try the SaaS version of Eventuate for free by [signing up here](https://
 
 # Using the Eventuate Binder
 
-Consider, for example, this simple Spring Cloud Stream application.
+Consider, for example, [this simple Spring Cloud Stream application](https://github.com/eventuate-examples/eventuate-client-spring-cloud-stream-example).
 It consumes messages from a stream and prints them.
 
 ```
@@ -101,3 +101,7 @@ Here is an example configuration that consumes events published by the `Account`
     net.chrisrichardson.eventstore.javaexamples.banking.backend.common.accounts.AccountOpenedEvent,\ net.chrisrichardson.eventstore.javaexamples.banking.backend.common.accounts.AccountDebitedEvent,\
      net.chrisrichardson.eventstore.javaexamples.banking.backend.common.accounts.AccountCreditedEvent
 ```
+
+# Example application
+
+Here is a [simple example application](https://github.com/eventuate-examples/eventuate-client-spring-cloud-stream-example).
