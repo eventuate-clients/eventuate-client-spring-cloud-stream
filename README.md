@@ -62,7 +62,7 @@ Maven:
 <dependency>
   <groupId>io.eventuate.client.java</groupId>
   <artifactId>eventuate-client-java-http-stomp-spring</artifactId>
-  <version>0.1/version>
+  <version>0.1</version>
 </dependency>
 ```
 
